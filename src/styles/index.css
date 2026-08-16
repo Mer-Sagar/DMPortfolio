@@ -22,7 +22,13 @@
   --site-text: #0f172a;
   --site-muted: #667085;
   --site-border: #e4dfd6;
-  --header-offset: 5.5rem;
+  --header-offset: 6.1rem;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --header-offset: 6.5rem;
+  }
 }
 
 html {
@@ -68,21 +74,12 @@ video {
 
 .brand-mark {
   display: block;
-  width: 2.5rem;
-  height: 2.5rem;
-  max-width: 2.5rem;
-  max-height: 2.5rem;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
   object-fit: contain;
   flex-shrink: 0;
-}
-
-@media (min-width: 640px) {
-  .brand-mark {
-    width: 2.75rem;
-    height: 2.75rem;
-    max-width: 2.75rem;
-    max-height: 2.75rem;
-  }
 }
 
 :focus-visible {
@@ -187,7 +184,11 @@ video {
   object-fit: cover;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 1024px) {
+  :root {
+    --header-offset: 6.5rem;
+  }
+}
   .media-frame {
     border-radius: 1.75rem;
   }

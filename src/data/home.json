@@ -5,7 +5,7 @@
     "ogImage": "/assets/images/hero/office.webp"
   },
   "hero": {
-    "kickerLeft": "Sojitra Vaishnav & Co. / Rajkot HQ",
+    "kickerLeft": "Dhaval Mer & Associates / Rajkot HQ",
     "kickerRight": "Statement of Advisory · FY 2026–27",
     "heading": "Precision meets",
     "highlightedHeading": "practical finance.",
@@ -87,7 +87,7 @@
   "philosophy": {
     "eyebrow": "Ethos",
     "title": "Excellence in Financial Services Since 2024",
-    "quote": "Sojitra Vaishnav & Co. was founded with a vision to provide exceptional financial services. Our expertise spans across finance, taxation, audit, GST, compliance, project finance, and business advisory.",
+    "quote": "Dhaval Mer & Associates was founded with a vision to provide exceptional financial services. Our expertise spans across finance, taxation, audit, GST, compliance, project finance, and business advisory.",
     "points": [
       { "id": "p1", "number": "Pt.01", "title": "Expert Team" },
       { "id": "p2", "number": "Pt.02", "title": "Qualified Professionals" },
@@ -169,7 +169,7 @@
   "contactEyebrow": "Headquarters",
   "finalCta": {
     "title": "Ready to bring clarity to your finance and compliance work?",
-    "description": "Speak with the firm for taxation, audit, GST, ROC, project finance, and business advisory support.",
+    "description": "Speak with Dhaval Mer & Associates for taxation, audit, GST, ROC, project finance, and business advisory support.",
     "primaryCta": { "label": "Book Consultation", "href": "/contact", "variant": "primary" }
   },
   "sections": [

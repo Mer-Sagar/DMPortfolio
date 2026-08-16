@@ -21,13 +21,13 @@ export function MobileMenu({ open, items, id }: MobileMenuProps) {
           role="dialog"
           aria-modal="true"
           aria-label="Menu"
-          className="pointer-events-auto fixed inset-0 z-[55] overflow-y-auto bg-[#f7f5f0]/97 px-6 pt-28 backdrop-blur-md"
+          className="pointer-events-auto fixed inset-0 z-[55] overflow-y-auto bg-[#f7f5f0]/97 px-5 pt-28 backdrop-blur-md"
           initial={reduce ? false : { opacity: 0, y: -12 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -8 }}
           transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
         >
-          <nav className="mx-auto flex max-w-lg flex-col gap-1">
+          <nav className="mx-auto flex max-w-lg flex-col gap-1 pb-16">
             {items.map((item, index) => (
               <motion.div
                 key={item.id}
@@ -38,7 +38,9 @@ export function MobileMenu({ open, items, id }: MobileMenuProps) {
                 <NavLink
                   to={item.href}
                   className={({ isActive }) =>
-                    `block rounded-2xl px-2 py-3 font-serif text-[2.1rem] leading-tight sm:text-5xl ${isActive ? "text-primary" : "text-ink"}`
+                    `block rounded-2xl px-2 py-3 font-serif text-[2rem] leading-tight min-[390px]:text-[2.2rem] sm:text-5xl ${
+                      isActive ? "text-[#0f766e]" : "text-[#102a2d]"
+                    }`
                   }
                 >
                   {item.label}
@@ -47,7 +49,7 @@ export function MobileMenu({ open, items, id }: MobileMenuProps) {
             ))}
             {navigation.cta ? (
               <div className="pt-8">
-                <Button href={navigation.cta.href} label={navigation.cta.label} />
+                <Button href={navigation.cta.href} label={navigation.cta.label} className="w-full sm:w-auto" />
               </div>
             ) : null}
           </nav>

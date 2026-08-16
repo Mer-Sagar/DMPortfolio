@@ -6,12 +6,14 @@ interface BrandMarkProps {
 
 export function BrandMark({ className = "" }: BrandMarkProps) {
   return (
-    <img
-      src={site.brand.mark}
-      alt=""
-      width={44}
-      height={44}
-      className={`brand-mark ${className}`}
-    />
+    <span className={`relative inline-block h-[46px] w-[56px] shrink-0 ${className}`}>
+      <img
+        src={site.brand.mark}
+        alt=""
+        width={56}
+        height={46}
+        className="h-full w-full object-contain object-center"
+      />
+    </span>
   );
 }

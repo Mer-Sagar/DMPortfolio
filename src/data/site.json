@@ -1,7 +1,7 @@
 {
   "brand": {
-    "name": "Sojitra Vaishnav & Co.",
-    "shortName": "SV",
+    "name": "Dhaval Mer & Associates",
+    "shortName": "DM",
     "tagline": "Chartered Accountants",
     "description": "Income tax, audit, GST, compliance, and advisory solutions for individuals, startups, and growing businesses.",
     "logo": "/assets/images/logo/ca-india.png",
@@ -41,7 +41,7 @@
       "value": "Monday to Saturday, 10:00 AM - 7:00 PM"
     }
   ],
-  "copyright": "© {year} Sojitra Vaishnav & Co. All Rights Reserved.",
+  "copyright": "© {year} Dhaval Mer & Associates. All Rights Reserved.",
   "legal": [
     { "label": "Privacy", "href": "/contact" },
     { "label": "Terms", "href": "/contact" }

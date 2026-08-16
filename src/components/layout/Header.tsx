@@ -1,9 +1,10 @@
 import { useEffect, useId, useRef, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import { BrandMark } from "@/components/common/BrandMark";
+import { BrandLockup } from "@/components/common/BrandLockup";
+import { GlassPill } from "@/components/common/GlassPill";
 import { MobileMenu } from "@/components/navigation/MobileMenu";
-import { site } from "@/lib/content";
+import { navigation } from "@/lib/content";
 import { visibleNavItems } from "@/lib/navigation";
 import { useLockBodyScroll } from "@/hooks/useLockBodyScroll";
 
@@ -34,30 +35,64 @@ export function Header() {
   }, [open]);
 
   return (
-    <header className="pointer-events-none fixed inset-x-0 top-0 z-[60] px-3 pt-3 sm:px-5 sm:pt-4">
-      <div className="pointer-events-auto mx-auto flex h-14 max-w-[1280px] items-center justify-between gap-2 rounded-full border border-white/70 bg-[#fffdf8]/92 px-2 shadow-[0_10px_40px_rgba(15,23,42,0.08)] backdrop-blur-md sm:h-[4.25rem] sm:gap-3 sm:px-4">
-        <Link to="/" className="flex min-w-0 flex-1 items-center gap-2 rounded-full py-1 pr-2 sm:gap-3" aria-label="Go home">
-          <BrandMark />
-          <span className="min-w-0">
-            <span className="block truncate text-[0.78rem] font-extrabold leading-tight tracking-tight text-[#0f172a] sm:text-[0.95rem]">
-              {site.brand.name}
-            </span>
-            <span className="block truncate text-[0.55rem] uppercase tracking-[0.16em] text-muted sm:text-[0.62rem] sm:tracking-[0.22em]">
-              {site.brand.tagline}
-            </span>
-          </span>
-        </Link>
-        <button
-          ref={buttonRef}
-          type="button"
-          className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-line bg-secondary sm:h-12 sm:w-12"
-          aria-expanded={open}
-          aria-controls={panelId}
-          aria-label={open ? "Close menu" : "Open menu"}
-          onClick={() => setOpen((value) => !value)}
-        >
-          {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-        </button>
+    <header className="pointer-events-none fixed inset-x-0 top-0 z-[60] px-3 py-3 min-[390px]:px-4 sm:px-5 sm:py-4">
+      <div className="pointer-events-auto mx-auto w-full max-w-[1440px]">
+        <div className="hidden w-full items-center justify-between gap-3 lg:flex">
+          <GlassPill className="shrink-0 px-5 py-2">
+            <Link to="/" className="flex-shrink-0" aria-label="Go home">
+              <BrandLockup />
+            </Link>
+          </GlassPill>
+
+          <GlassPill className="min-w-0 px-2 py-2">
+            <div className="flex items-center gap-0.5 xl:gap-1">
+              <nav className="flex max-w-full items-center overflow-x-auto" aria-label="Primary">
+                {items.map((item) => (
+                  <NavLink
+                    key={item.id}
+                    to={item.href}
+                    className={({ isActive }) =>
+                      `relative whitespace-nowrap rounded-full px-2.5 py-2 text-[13px] font-bold transition-colors duration-200 xl:px-4 xl:text-sm ${
+                        isActive ? "text-[#0f766e]" : "text-[#334b4e] hover:text-[#0f766e]"
+                      }`
+                    }
+                  >
+                    {item.label}
+                  </NavLink>
+                ))}
+              </nav>
+              {navigation.cta ? (
+                <Link
+                  to={navigation.cta.href}
+                  className="ml-1 inline-flex h-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-[#102a2d] via-[#0f766e] to-[#d6b76a] px-5 text-sm font-black text-white shadow-md"
+                >
+                  {navigation.cta.label}
+                </Link>
+              ) : null}
+            </div>
+          </GlassPill>
+        </div>
+
+        <div className="w-full lg:hidden">
+          <GlassPill className="px-3 py-2 min-[390px]:px-4">
+            <div className="flex w-full items-center justify-between gap-2">
+              <Link to="/" className="min-w-0" aria-label="Go home">
+                <BrandLockup compact />
+              </Link>
+              <button
+                ref={buttonRef}
+                type="button"
+                className="grid h-10 w-10 shrink-0 place-items-center rounded-full border border-[#d8c9a3]/80 bg-white/90 text-[#102a2d] shadow-sm backdrop-blur transition hover:border-[#0f766e] hover:text-[#0f766e]"
+                aria-expanded={open}
+                aria-controls={panelId}
+                aria-label={open ? "Close menu" : "Open menu"}
+                onClick={() => setOpen((value) => !value)}
+              >
+                {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+              </button>
+            </div>
+          </GlassPill>
+        </div>
       </div>
       <MobileMenu open={open} items={items} id={panelId} />
     </header>
