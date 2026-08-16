@@ -17,9 +17,11 @@
     "video": "/assets/videos/office.mp4",
     "background": "/assets/videos/taxes.mp4",
     "badge": "Live",
+    "seal": "AUDIT READY",
     "note": "Every figure on this page is fed from practice records — not placeholder copy.",
     "exhibitLabel": "Exhibit A · Engagement Reel",
     "exhibitMeta": "FY 2026–27",
+    "exhibitNote": "Filed with client consent, updated quarterly",
     "marquee": "ADVISORY VERIFIED  •  AUDIT READY  •  GST ON FILE  •  PARTNER LED  •  ",
     "metrics": [
       { "label": "Clients", "value": "500+", "description": "Active relationships" },

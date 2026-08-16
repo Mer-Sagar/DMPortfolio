@@ -113,10 +113,12 @@ export interface HeroData {
   marquee?: string;
   background?: string;
   badge?: string;
+  seal?: string;
   note?: string;
   metrics?: HeroMetric[];
   exhibitLabel?: string;
   exhibitMeta?: string;
+  exhibitNote?: string;
 }
 
 export interface Statistic {

@@ -1,10 +1,10 @@
 import { useEffect, useId, useRef, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, Phone, X } from "lucide-react";
 import { BrandLockup } from "@/components/common/BrandLockup";
 import { GlassPill } from "@/components/common/GlassPill";
 import { MobileMenu } from "@/components/navigation/MobileMenu";
-import { navigation } from "@/lib/content";
+import { navigation, site } from "@/lib/content";
 import { visibleNavItems } from "@/lib/navigation";
 import { useLockBodyScroll } from "@/hooks/useLockBodyScroll";
 
@@ -53,7 +53,7 @@ export function Header() {
                     to={item.href}
                     className={({ isActive }) =>
                       `relative whitespace-nowrap rounded-full px-2.5 py-2 text-[13px] font-bold transition-colors duration-200 xl:px-4 xl:text-sm ${
-                        isActive ? "text-[#0f766e]" : "text-[#334b4e] hover:text-[#0f766e]"
+                        isActive ? "bg-[#e7f4f0] text-[#0f766e]" : "text-[#334b4e] hover:text-[#0f766e]"
                       }`
                     }
                   >
@@ -61,10 +61,19 @@ export function Header() {
                   </NavLink>
                 ))}
               </nav>
+              {site.contact.phone ? (
+                <a
+                  href={`tel:${site.contact.phone}`}
+                  className="ml-1 grid h-10 w-10 shrink-0 place-items-center rounded-full border border-[#d8c9a3]/80 bg-white/90 text-[#102a2d] shadow-sm transition hover:border-[#0f766e] hover:text-[#0f766e]"
+                  aria-label="Call"
+                >
+                  <Phone className="h-4 w-4" />
+                </a>
+              ) : null}
               {navigation.cta ? (
                 <Link
                   to={navigation.cta.href}
-                  className="ml-1 inline-flex h-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-[#102a2d] via-[#0f766e] to-[#d6b76a] px-5 text-sm font-black text-white shadow-md"
+                  className="ml-1 inline-flex h-10 shrink-0 items-center justify-center rounded-full bg-[#102a2d] px-5 text-sm font-black text-white shadow-md"
                 >
                   {navigation.cta.label}
                 </Link>
