@@ -25,6 +25,32 @@ npm run build
 npm run preview
 ```
 
+## Deploy on Vercel
+
+This is a Vite SPA. Vercel should use **Build Command** `npm run build` and **Output Directory** `dist`. Client routes (`/services`, `/about`, etc.) are handled by `vercel.json`.
+
+### Commands
+
+```bash
+npm install
+npm run build
+npx vercel
+npx vercel --prod
+```
+
+Or use the npm scripts:
+
+```bash
+npm run vercel
+npm run vercel:prod
+```
+
+First time, log in when prompted, then pick the existing project **cadhavalmerassociates** so production stays at https://cadhavalmerassociates.vercel.app/
+
+### GitHub auto-deploy
+
+In the Vercel dashboard, connect this GitHub repo and set Production Branch to `main`. After that, every `git push origin main` publishes a new production build.
+
 ## To customize this website, edit these JSON files
 
 All business copy, navigation, theme colours, and media paths live under `src/data/`. Components never hard-code client names, statistics, or service lists.
