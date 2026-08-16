@@ -111,9 +111,9 @@ export function HomePage() {
         <section className="bg-white pb-16 sm:pb-24">
           <Container>
             <h2 className="poster text-center">{home.articlesTitle ?? home.articlesEyebrow}</h2>
-            <div className="mt-4 flex flex-col items-center gap-1" aria-hidden>
-              <span className="h-1.5 w-1.5 rotate-45 bg-sky-500" />
-              <span className="h-1.5 w-1.5 rotate-45 bg-sky-500" />
+            <div className="mt-4 flex flex-col items-center gap-1.5" aria-hidden>
+              <span className="h-1.5 w-1.5 rotate-45 bg-[#5b9bd5]" />
+              <span className="h-1.5 w-1.5 rotate-45 bg-[#5b9bd5]" />
             </div>
             <div className="mt-10">
               <ArticleGrid

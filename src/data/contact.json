@@ -16,8 +16,8 @@
   "mapTitle": "Find us",
   "mapDescription": "The map embed is driven from contact JSON and can be replaced without touching components.",
   "phones": [
-    { "label": "CA Dhaval Mer", "value": "9328026969", "href": "tel:9328026969" },
-    { "label": "Office", "value": "7874087997", "href": "tel:7874087997" }
+    { "label": "CA Dhaval Mer", "value": "8734812200", "href": "tel:8734812200" },
+    { "label": "CA Viraj Vaishnav", "value": "7874087997", "href": "tel:7874087997" }
   ],
   "form": {
     "fields": [

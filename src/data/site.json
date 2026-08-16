@@ -20,8 +20,8 @@
   },
   "contact": {
     "email": "casvandcompany@gmail.com",
-    "phone": "9328026969",
-    "whatsapp": "9328026969",
+    "phone": "8734812200",
+    "whatsapp": "8734812200",
     "address": "410, Dwarika Empire, opp. Rashtriya Shala, off Doctor Yagnik Road, Manhar Plot, Bhakti Nagar, Rajkot, Gujarat 360002",
     "city": "Rajkot",
     "country": "India",
@@ -43,8 +43,7 @@
   ],
   "copyright": "© {year} Dhaval Mer & Associates. All Rights Reserved.",
   "legal": [
-    { "label": "Privacy", "href": "/contact" },
-    { "label": "Terms", "href": "/contact" }
+    { "label": "Maps", "href": "https://maps.app.goo.gl/bUi5WP5jXXxW6uD19" }
   ],
   "locale": "en-IN",
   "baseUrl": "https://cadhavalmerassociates.vercel.app"

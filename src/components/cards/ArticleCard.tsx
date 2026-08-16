@@ -17,43 +17,95 @@ interface ArticleCardProps {
   featured?: boolean;
   compact?: boolean;
   labels?: JournalLabels;
+  showDate?: boolean;
 }
 
 function dateLabel(value: string) {
   return formatDate(value, site.locale).replace(/,/g, "").toUpperCase();
 }
 
-export function ArticleCard({ article, featured, compact, labels }: ArticleCardProps) {
+function ActionPill({
+  href,
+  label,
+  download,
+  icon,
+}: {
+  href: string;
+  label: string;
+  download?: boolean;
+  icon?: "arrow" | "download";
+}) {
+  const classes =
+    "inline-flex items-center gap-2 rounded-full border border-slate-300 bg-transparent px-4 py-2 text-[11px] font-bold uppercase tracking-[0.14em] text-slate-700 transition hover:border-slate-900 hover:text-slate-900";
+  const content = (
+    <>
+      {icon === "download" ? <Download className="h-3.5 w-3.5" /> : null}
+      <span>{label}</span>
+      {icon === "arrow" ? <ArrowRight className="h-3.5 w-3.5" /> : null}
+    </>
+  );
+
+  if (download) {
+    return (
+      <a href={href} download className={classes}>
+        {content}
+      </a>
+    );
+  }
+
+  return (
+    <Link to={href} className={classes}>
+      {content}
+    </Link>
+  );
+}
+
+export function ArticleCard({ article, featured, compact, labels, showDate = true }: ArticleCardProps) {
   const readLabel = featured ? (labels?.readLabel ?? "Read Manuscript") : (labels?.readShortLabel ?? "Read");
   const pdfLabel = compact ? (labels?.pdfShortLabel ?? "PDF") : (labels?.pdfLabel ?? "Download PDF");
 
-  if (featured || compact) {
+  if (featured) {
     return (
-      <article className={`flex h-full flex-col justify-between p-6 sm:p-8 ${featured ? "min-h-[22rem]" : ""}`}>
+      <article className="flex h-full min-h-[24rem] flex-col justify-between p-7 sm:p-10">
         <div>
-          <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-400">{dateLabel(article.date)}</p>
-          <h3 className={`mt-4 font-serif font-semibold leading-tight text-slate-900 ${featured ? "text-[1.65rem] sm:text-[2.05rem]" : "text-[1.25rem] sm:text-[1.4rem]"}`}>
+          {showDate ? (
+            <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-400">{dateLabel(article.date)}</p>
+          ) : null}
+          <h3 className="mt-5 font-serif text-[clamp(1.55rem,1.2rem+1.4vw,2.15rem)] font-semibold leading-[1.2] text-slate-900">
             <Link to={`/articles/${article.slug}`} className="hover:underline">
               {article.title}
             </Link>
           </h3>
-          <p className="mt-3 max-w-xl text-[14px] leading-relaxed text-slate-500">{article.excerpt}</p>
+          <p className="mt-5 max-w-xl text-[14px] leading-[1.7] text-slate-500">{article.excerpt}</p>
         </div>
-        <div className="mt-6 flex flex-wrap items-center gap-4">
-          <Link
-            to={`/articles/${article.slug}`}
-            className="inline-flex items-center gap-1 text-[11px] font-bold uppercase tracking-[0.16em] text-slate-700"
-          >
+        <div className="mt-8 flex flex-wrap items-center gap-3">
+          <ActionPill href={`/articles/${article.slug}`} label={readLabel} icon="arrow" />
+          {article.pdfUrl ? <ActionPill href={article.pdfUrl} label={pdfLabel} download icon="download" /> : null}
+        </div>
+      </article>
+    );
+  }
+
+  if (compact) {
+    return (
+      <article className="flex h-full flex-col justify-between p-7 sm:p-8">
+        <div>
+          {showDate ? (
+            <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-400">{dateLabel(article.date)}</p>
+          ) : null}
+          <h3 className={`font-serif text-[1.2rem] font-semibold leading-[1.25] text-slate-900 sm:text-[1.35rem] ${showDate ? "mt-4" : ""}`}>
+            <Link to={`/articles/${article.slug}`} className="hover:underline">
+              {article.title}
+            </Link>
+          </h3>
+          <p className="mt-3 line-clamp-4 text-[13px] leading-[1.65] text-slate-500">{article.excerpt}</p>
+        </div>
+        <div className="mt-6 flex flex-wrap items-center gap-5 text-[11px] font-bold uppercase tracking-[0.14em] text-slate-700">
+          <Link to={`/articles/${article.slug}`} className="inline-flex items-center gap-1 hover:text-slate-900">
             {readLabel} <ArrowRight className="h-3.5 w-3.5" />
           </Link>
           {article.pdfUrl ? (
-            <a
-              href={article.pdfUrl}
-              download
-              className={`inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.14em] text-sky-700 ${
-                featured ? "rounded-full border border-sky-300 px-3 py-1.5" : ""
-              }`}
-            >
+            <a href={article.pdfUrl} download className="inline-flex items-center gap-1.5 hover:text-slate-900">
               <Download className="h-3.5 w-3.5" />
               {pdfLabel}
             </a>
@@ -94,21 +146,20 @@ interface ArticleGridProps {
 
 export function ArticleGrid({ items, variant = "default", labels }: ArticleGridProps) {
   if (!items.length) return null;
-  const [first, ...rest] = items;
+  const [first, second, third, ...rest] = items;
 
   if (variant === "journal") {
     return (
-      <div className="overflow-hidden rounded-sm border border-slate-200 bg-[#f7f5ef]">
-        <div className="grid lg:grid-cols-[1.15fr_0.85fr]">
+      <div className="overflow-hidden border border-slate-200 bg-[#f8f7f2]">
+        <div className="grid lg:grid-cols-2">
           {first ? (
             <div className="border-b border-slate-200 lg:border-b-0 lg:border-r">
               <ArticleCard article={first} featured labels={labels} />
             </div>
           ) : null}
-          <div className="divide-y divide-slate-200">
-            {rest.map((article) => (
-              <ArticleCard key={article.id} article={article} compact labels={labels} />
-            ))}
+          <div className="grid divide-y divide-slate-200 lg:grid-rows-2">
+            {second ? <ArticleCard article={second} compact labels={labels} showDate={false} /> : null}
+            {third ? <ArticleCard article={third} compact labels={labels} showDate /> : null}
           </div>
         </div>
       </div>
@@ -119,8 +170,8 @@ export function ArticleGrid({ items, variant = "default", labels }: ArticleGridP
     <div className="grid gap-8 lg:grid-cols-[1.4fr_1fr]">
       {first ? <ArticleCard article={first} featured labels={labels} /> : null}
       <div>
-        {rest.map((article) => (
-          <ArticleCard key={article.id} article={article} labels={labels} />
+        {[second, third, ...rest].filter(Boolean).map((article) => (
+          <ArticleCard key={article!.id} article={article!} labels={labels} />
         ))}
       </div>
     </div>

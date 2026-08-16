@@ -72,7 +72,7 @@ export function CTASection({ data, dark, variant = "default" }: CTASectionProps)
           {data.primaryCta ? (
             <Link
               to={data.primaryCta.href}
-              className="mt-10 inline-flex items-center gap-2 bg-slate-950 px-8 py-4 text-[13px] font-bold uppercase tracking-[0.16em] text-white shadow-[5px_5px_0_0_#1e3a8a]"
+              className="mt-10 inline-flex items-center gap-2 bg-[#0a0f1a] px-8 py-4 font-sans text-[12px] font-bold uppercase tracking-[0.2em] text-white shadow-[5px_5px_0_0_#1e3a8a]"
             >
               {data.primaryCta.label}
               <ArrowUpRight className="h-4 w-4" />
