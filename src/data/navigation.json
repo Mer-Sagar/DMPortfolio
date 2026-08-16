@@ -1,0 +1,18 @@
+{
+  "items": [
+    { "id": "home", "label": "Home", "href": "/", "enabled": true },
+    { "id": "services", "label": "Services", "href": "/services", "enabled": true },
+    { "id": "about", "label": "About Us", "href": "/about", "enabled": true },
+    { "id": "projects", "label": "Projects", "href": "/projects", "enabled": true },
+    { "id": "articles", "label": "News Updates", "href": "/articles", "enabled": true },
+    { "id": "contact", "label": "Contact Us", "href": "/contact", "enabled": true }
+  ],
+  "cta": {
+    "label": "Book Consultation",
+    "href": "/contact"
+  },
+  "footerCta": {
+    "label": "Book Consultation",
+    "href": "/contact"
+  }
+}

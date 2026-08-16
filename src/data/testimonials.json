@@ -1,0 +1,29 @@
+{
+  "title": "Client voices",
+  "items": [
+    {
+      "id": "t1",
+      "name": "Nidhi Mehta",
+      "company": "Mehta Trading Co.",
+      "role": "Founder",
+      "quote": "Filing used to arrive as a scramble. The monthly rhythm made GST and books feel like one conversation instead of five.",
+      "rating": 5
+    },
+    {
+      "id": "t2",
+      "name": "Karan Joshi",
+      "company": "Northline Projects",
+      "role": "Director",
+      "quote": "The project note was written for the banker, not for a slide deck. Assumptions were visible and the numbers held up in the meeting.",
+      "rating": 5
+    },
+    {
+      "id": "t3",
+      "name": "Ayesha Khan",
+      "company": "Studio Ayesha",
+      "role": "Principal",
+      "quote": "Partners stayed on the call when a notice arrived. We left with a sequence of documents, not a generic reassurance.",
+      "rating": 5
+    }
+  ]
+}

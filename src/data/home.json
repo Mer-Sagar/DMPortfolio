@@ -1,0 +1,189 @@
+{
+  "seo": {
+    "title": "Chartered Accountant Firm | Precision meets practical finance",
+    "description": "Income tax, audit, GST, compliance, and advisory solutions for individuals, startups, and growing businesses.",
+    "ogImage": "/assets/images/hero/office.webp"
+  },
+  "hero": {
+    "kickerLeft": "Sojitra Vaishnav & Co. / Rajkot HQ",
+    "kickerRight": "Statement of Advisory · FY 2026–27",
+    "heading": "Precision meets",
+    "highlightedHeading": "practical finance.",
+    "description": "Income tax, audit, GST, compliance, and advisory solutions for individuals, startups, and growing businesses.",
+    "primaryCta": { "label": "Book Consultation", "href": "/contact", "variant": "primary" },
+    "secondaryCta": { "label": "Explore Services", "href": "/services", "variant": "secondary" },
+    "image": "/assets/images/hero/office.svg",
+    "imageAlt": "Calm professional workspace with structured light",
+    "badge": "Live",
+    "note": "Every figure on this page is fed from practice records — not placeholder copy.",
+    "exhibitLabel": "Exhibit A · Engagement Reel",
+    "exhibitMeta": "FY 2026–27",
+    "metrics": [
+      { "label": "Clients", "value": "500+", "description": "Active relationships" },
+      { "label": "Tax Audits", "value": "100+", "description": "Audit-ready process" },
+      { "label": "GST Compliance", "value": "Monthly / Quarterly", "description": "Timely filing support" },
+      { "label": "Project Finance", "value": "Reports & funding guidance", "description": "Feasibility clarity" }
+    ]
+  },
+  "highlights": {
+    "title": "The filing calendar",
+    "description": "Three engagements, one rhythm",
+    "items": [
+      {
+        "id": "q1",
+        "eyebrow": "Q1",
+        "title": "Tax & GST",
+        "description": "Planning, filing, and advisory clarity with a monthly rhythm without deadline pressure."
+      },
+      {
+        "id": "q2",
+        "eyebrow": "Q2",
+        "title": "Audit & ROC",
+        "description": "Records thoroughly reviewed before risk appears, keeping compliance tracked with absolute discipline."
+      },
+      {
+        "id": "q3",
+        "eyebrow": "Q3",
+        "title": "Project Finance",
+        "description": "Clear, structured reports and funding guidance tailored for your business growth and feasibility."
+      }
+    ]
+  },
+  "pipeline": {
+    "title": "The document route",
+    "description": "A seamless, disciplined pipeline from raw data to filed compliance.",
+    "badge": "Ready to sign off",
+    "items": [
+      {
+        "id": "collect",
+        "letter": "A",
+        "title": "Collect",
+        "description": "Books, invoices, and returns are structured into one pristine working file."
+      },
+      {
+        "id": "review",
+        "letter": "B",
+        "title": "Review",
+        "description": "Numbers are verified strictly against tax, GST, audit and ROC compliance."
+      },
+      {
+        "id": "close",
+        "letter": "C",
+        "title": "Close",
+        "description": "Filing and reporting is delivered with absolute, partner-led clarity."
+      }
+    ]
+  },
+  "midCta": {
+    "title": "Structure your financial future.",
+    "description": "Step into clarity with our structured process — trusted by growing businesses and established enterprises.",
+    "tags": ["GST / Tax / ROC", "Audit-ready records", "Project finance"],
+    "primaryCta": { "label": "Book Consultation", "href": "/contact", "variant": "primary" },
+    "note": "Signed & countersigned within 24 hrs"
+  },
+  "philosophy": {
+    "eyebrow": "Ethos",
+    "title": "Excellence in Financial Services Since 2024",
+    "quote": "Sojitra Vaishnav & Co. was founded with a vision to provide exceptional financial services. Our expertise spans across finance, taxation, audit, GST, compliance, project finance, and business advisory.",
+    "points": [
+      { "id": "p1", "number": "Pt.01", "title": "Expert Team" },
+      { "id": "p2", "number": "Pt.02", "title": "Qualified Professionals" },
+      { "id": "p3", "number": "Pt.03", "title": "Client Focus" },
+      { "id": "p4", "number": "Pt.04", "title": "Personalized Solutions" },
+      { "id": "p5", "number": "Pt.05", "title": "Compliance First" },
+      { "id": "p6", "number": "Pt.06", "title": "Business Growth Advisory" }
+    ]
+  },
+  "capabilitiesEyebrow": "Capabilities",
+  "capabilitiesTitle": "Engineered logic, human experience.",
+  "teamEyebrow": "The Minds",
+  "teamTitle": "Architects of vision, grounded in structural reality.",
+  "reasons": {
+    "title": "Why Businesses Work With Us",
+    "items": [
+      {
+        "id": "r1",
+        "number": "1",
+        "title": "Compliance Without Confusion",
+        "description": "We translate complex filing and audit requirements into clear next steps.",
+        "actionLabel": "Observe"
+      },
+      {
+        "id": "r2",
+        "number": "2",
+        "title": "Founder-Led Advisory",
+        "description": "Partners stay close to the work, especially for sensitive tax and finance matters.",
+        "actionLabel": "Observe"
+      },
+      {
+        "id": "r3",
+        "number": "3",
+        "title": "Modern Operating Rhythm",
+        "description": "Organized records, timely follow-ups, and clean communication keep work moving.",
+        "actionLabel": "Observe"
+      },
+      {
+        "id": "r4",
+        "number": "4",
+        "title": "Local Business Context",
+        "description": "Advice shaped for local businesses, professionals, founders, and family enterprises.",
+        "actionLabel": "Observe"
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "Workflow",
+    "title": "A Calm Process for Complex Work",
+    "description": "From first discussion to filing, reporting, or advisory closure, every engagement moves through a clear workflow.",
+    "steps": [
+      {
+        "id": "understand",
+        "number": "01",
+        "title": "Understand",
+        "description": "We map the issue, deadlines, business context, and available records."
+      },
+      {
+        "id": "organize",
+        "number": "02",
+        "title": "Organize",
+        "description": "Documents, reconciliations, and compliance details are structured before action."
+      },
+      {
+        "id": "execute",
+        "number": "03",
+        "title": "Execute",
+        "description": "Filings, audits, reports, and advisory deliverables are completed with review discipline."
+      },
+      {
+        "id": "guide",
+        "number": "04",
+        "title": "Guide",
+        "description": "You receive practical next steps so compliance and finance stay under control."
+      }
+    ]
+  },
+  "articlesEyebrow": "Journal",
+  "contactEyebrow": "Headquarters",
+  "finalCta": {
+    "title": "Ready to bring clarity to your finance and compliance work?",
+    "description": "Speak with the firm for taxation, audit, GST, ROC, project finance, and business advisory support.",
+    "primaryCta": { "label": "Book Consultation", "href": "/contact", "variant": "primary" }
+  },
+  "sections": [
+    { "type": "hero", "enabled": true },
+    { "type": "highlights", "enabled": true },
+    { "type": "pipeline", "enabled": true },
+    { "type": "midCta", "enabled": true },
+    { "type": "statistics", "enabled": true },
+    { "type": "philosophy", "enabled": true },
+    { "type": "services", "enabled": true },
+    { "type": "team", "enabled": true },
+    { "type": "reasons", "enabled": true },
+    { "type": "process", "enabled": true },
+    { "type": "projects", "enabled": true },
+    { "type": "articles", "enabled": true },
+    { "type": "testimonials", "enabled": true },
+    { "type": "contact", "enabled": true },
+    { "type": "finalCta", "enabled": true }
+  ]
+}

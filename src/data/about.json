@@ -1,0 +1,56 @@
+{
+  "seo": {
+    "title": "About | Calm structure, serious work",
+    "description": "A modern professional firm built for practical tax, audit, GST, compliance, project finance, and business advisory work."
+  },
+  "hero": {
+    "eyebrow": "About the firm",
+    "heading": "Calm Structure",
+    "highlightedHeading": "Serious Work",
+    "description": "A modern CA firm built for practical tax, audit, GST, compliance, project finance, and business advisory work.",
+    "primaryCta": { "label": "Start a conversation", "href": "/contact", "variant": "primary" },
+    "secondaryCta": { "label": "View Services", "href": "/services", "variant": "secondary" }
+  },
+  "origin": {
+    "eyebrow": "Origin Statement",
+    "quote": "Make complex financial, tax, and compliance decisions easier to understand and easier to execute."
+  },
+  "mission": "Bring partner-led judgment to tax, audit, GST, ROC, and finance work without turning the client into a project manager of their own compliance.",
+  "vision": "A practice where records, deadlines, and advice live in one calm operating rhythm.",
+  "milestones": [
+    { "id": "m1", "title": "14 Aug 2024", "description": "Founded with a modern advisory vision." },
+    { "id": "m2", "title": "Rajkot, Gujarat", "description": "Local presence for regional business needs." },
+    { "id": "m3", "title": "Full-stack CA support", "description": "Tax, audit, GST, ROC, finance, and advisory." }
+  ],
+  "values": {
+    "eyebrow": "Values",
+    "title": "Work that feels lighter",
+    "items": [
+      {
+        "id": "v1",
+        "number": "1",
+        "title": "Clarity",
+        "description": "Clients should understand what is being filed, reviewed, advised, and why each decision matters.",
+        "actionLabel": "Observe"
+      },
+      {
+        "id": "v2",
+        "number": "2",
+        "title": "Discipline",
+        "description": "Compliance work becomes stronger when records, due dates, and review cycles follow a dependable rhythm.",
+        "actionLabel": "Observe"
+      },
+      {
+        "id": "v3",
+        "number": "3",
+        "title": "Responsibility",
+        "description": "Sensitive finance and tax matters are handled with careful review, practical thinking, and professional judgment.",
+        "actionLabel": "Observe"
+      }
+    ]
+  },
+  "audiences": {
+    "title": "Individuals. Founders. Growing businesses.",
+    "description": "Whether the requirement is GST filing, income tax return preparation, internal audit, ROC compliance, project reports, or business advisory, the firm keeps the conversation practical and the execution accountable."
+  }
+}

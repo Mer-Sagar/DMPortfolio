@@ -1,0 +1,262 @@
+{
+  "seo": {
+    "title": "Service Directory | Tax, GST, Audit, ROC and Project Finance",
+    "description": "A structured map for tax, audit, GST, ROC, bookkeeping, project finance, subsidy support, and advisory."
+  },
+  "hero": {
+    "eyebrow": "Service Directory",
+    "heading": "Every engagement,",
+    "highlightedHeading": "indexed.",
+    "description": "A structured map for tax, audit, GST, ROC, bookkeeping, project finance, subsidy support, and advisory — filed where you’d expect to find it.",
+    "primaryCta": { "label": "Discuss requirement", "href": "/contact", "variant": "primary" },
+    "secondaryCta": { "label": "Open explorer", "href": "#explorer", "variant": "secondary" }
+  },
+  "snapshot": {
+    "title": "Active scopes on file",
+    "countLabel": "08",
+    "items": [
+      {
+        "id": "s1",
+        "title": "Compliance-first",
+        "description": "GST, tax, ROC, and audit workflows handled with documentation discipline."
+      },
+      {
+        "id": "s2",
+        "title": "Audit-ready",
+        "description": "Bookkeeping, reconciliations, and reporting support for cleaner records."
+      },
+      {
+        "id": "s3",
+        "title": "Advisory-led",
+        "description": "Project finance, subsidy guidance, and business advisory for growth decisions."
+      }
+    ]
+  },
+  "workflow": {
+    "title": "From papers to clarity.",
+    "description": "Every service runs as a clean workflow, not a random task list.",
+    "rhythm": "Requirement, documents, review, filing, reporting, and advisory follow-up.",
+    "items": [
+      {
+        "id": "w1",
+        "eyebrow": "01",
+        "title": "Compliance-first",
+        "description": "GST, tax, ROC, and audit workflows handled with documentation discipline."
+      },
+      {
+        "id": "w2",
+        "eyebrow": "02",
+        "title": "Audit-ready",
+        "description": "Bookkeeping, reconciliations, and reporting support for cleaner records."
+      },
+      {
+        "id": "w3",
+        "eyebrow": "03",
+        "title": "Advisory-led",
+        "description": "Project finance, subsidy guidance, and business advisory for growth decisions."
+      }
+    ]
+  },
+  "directoryTitle": "Service directory.",
+  "directoryDescription": "Start from a workstream, then open the full explorer below.",
+  "explorerTitle": "Find the exact service you need",
+  "explorerDescription": "Search, filter, and open the exact service you need — no guesswork.",
+  "searchPlaceholder": "Quick search",
+  "categories": ["All", "Advisory", "Audit", "Tax", "GST", "Accounting", "Finance", "Compliance"],
+  "items": [
+    {
+      "id": "service-01",
+      "number": "01",
+      "title": "Auditing",
+      "slug": "auditing",
+      "category": "Audit",
+      "icon": "shield",
+      "image": "/assets/images/general/service-audit.svg",
+      "shortDescription": "Comprehensive audit services for businesses.",
+      "fullDescription": "Independent review of books, internal controls, and reporting so stakeholders can rely on the numbers. Engagements are scoped for statutory, tax, and internal audit needs with a documentation-first rhythm.",
+      "features": [
+        "Statutory and tax audit planning",
+        "Working paper discipline",
+        "Management letter with practical findings",
+        "Partner review before sign-off"
+      ],
+      "benefits": [
+        "Audit-ready records throughout the year",
+        "Fewer last-minute surprises at year end",
+        "Clearer internal control conversations"
+      ],
+      "process": [
+        { "id": "a1", "number": "01", "title": "Scope", "description": "Confirm entity, period, and reporting requirements." },
+        { "id": "a2", "number": "02", "title": "Examine", "description": "Test records, reconciliations, and control points." },
+        { "id": "a3", "number": "03", "title": "Report", "description": "Deliver findings with partner-led clarity." }
+      ],
+      "cta": { "label": "Discuss an audit", "href": "/contact" }
+    },
+    {
+      "id": "service-02",
+      "number": "02",
+      "title": "Income Tax",
+      "slug": "income-tax",
+      "category": "Tax",
+      "icon": "calculator",
+      "image": "/assets/images/general/service-tax.svg",
+      "shortDescription": "Expert tax planning and compliance.",
+      "fullDescription": "Return preparation, planning, and representation structured around deadlines and documentation. Advice stays practical for individuals, founders, and operating businesses.",
+      "features": [
+        "Return preparation and review",
+        "Advance tax and planning notes",
+        "Notice response support",
+        "Capital gains and salary structuring"
+      ],
+      "benefits": [
+        "Fewer filing errors",
+        "Clearer tax cash-flow planning",
+        "Documented positions for future queries"
+      ],
+      "cta": { "label": "Plan your taxes", "href": "/contact" }
+    },
+    {
+      "id": "service-03",
+      "number": "03",
+      "title": "GST Compliance",
+      "slug": "gst-compliance",
+      "category": "GST",
+      "icon": "file-text",
+      "image": "/assets/images/general/service-gst.svg",
+      "shortDescription": "Complete GST filing and advisory.",
+      "fullDescription": "Monthly and quarterly GST work including returns, reconciliations, e-way bill hygiene, and advisory on input tax credit. Designed for businesses that want a calm filing calendar.",
+      "features": [
+        "GSTR filing rhythm",
+        "ITC reconciliations",
+        "E-way bill process notes",
+        "Notice and mismatch support"
+      ],
+      "benefits": [
+        "Reduced late-fee exposure",
+        "Cleaner credit positions",
+        "Predictable monthly close"
+      ],
+      "cta": { "label": "Set a GST rhythm", "href": "/contact" }
+    },
+    {
+      "id": "service-04",
+      "number": "04",
+      "title": "Bookkeeping Services",
+      "slug": "bookkeeping",
+      "category": "Accounting",
+      "icon": "briefcase",
+      "image": "/assets/images/general/service-books.svg",
+      "shortDescription": "Professional bookkeeping solutions.",
+      "fullDescription": "Day books, ledgers, bank reconciliations, and MIS packaged so tax, GST, and audit work starts from clean records rather than reconstruction.",
+      "features": [
+        "Monthly books and bank recs",
+        "Vendor and customer ledgers",
+        "MIS packs for founders",
+        "Year-end close support"
+      ],
+      "benefits": [
+        "Audit-ready working files",
+        "Faster GST and tax cycles",
+        "Better cash visibility"
+      ],
+      "cta": { "label": "Organize the books", "href": "/contact" }
+    },
+    {
+      "id": "service-05",
+      "number": "05",
+      "title": "Project Finance",
+      "slug": "project-finance",
+      "category": "Finance",
+      "icon": "chart",
+      "image": "/assets/images/general/service-finance.svg",
+      "shortDescription": "Strategic project financing advice.",
+      "fullDescription": "Feasibility notes, projections, and funding documentation for lenders and promoters. Reports are written for decision-makers who need numbers they can defend.",
+      "features": [
+        "Project report drafting",
+        "Cash-flow and DSCR views",
+        "Banker-ready schedules",
+        "Sensitivity and assumptions log"
+      ],
+      "benefits": [
+        "Clearer lender conversations",
+        "Documented feasibility",
+        "Faster internal go/no-go"
+      ],
+      "cta": { "label": "Request a project note", "href": "/contact" }
+    },
+    {
+      "id": "service-06",
+      "number": "06",
+      "title": "Subsidy Services",
+      "slug": "subsidy-services",
+      "category": "Advisory",
+      "icon": "sparkles",
+      "image": "/assets/images/general/service-subsidy.svg",
+      "shortDescription": "Government subsidy consultation.",
+      "fullDescription": "Guidance on industrial and MSME incentive pathways, documentation checklists, and application hygiene so claims are complete before they leave the office.",
+      "features": [
+        "Scheme mapping",
+        "Eligibility notes",
+        "Document checklists",
+        "Follow-up cadence"
+      ],
+      "benefits": [
+        "Fewer incomplete filings",
+        "Clearer incentive picture",
+        "Time saved on research"
+      ],
+      "cta": { "label": "Map incentives", "href": "/contact" }
+    },
+    {
+      "id": "service-07",
+      "number": "07",
+      "title": "ROC Compliance",
+      "slug": "roc-compliance",
+      "category": "Compliance",
+      "icon": "building",
+      "image": "/assets/images/general/service-roc.svg",
+      "shortDescription": "Company law compliance services.",
+      "fullDescription": "Company and LLP filings, event-based forms, and secretarial hygiene coordinated with accounts so statutory calendars stay intact.",
+      "features": [
+        "Annual ROC filings",
+        "Director and capital event forms",
+        "Minutes and register support",
+        "Deadline tracking"
+      ],
+      "benefits": [
+        "Lower additional-fee risk",
+        "Cleaner company records",
+        "Aligned tax and ROC files"
+      ],
+      "cta": { "label": "Review ROC calendar", "href": "/contact" }
+    },
+    {
+      "id": "service-08",
+      "number": "08",
+      "title": "Investment Advisory",
+      "slug": "investment-advisory",
+      "category": "Advisory",
+      "icon": "landmark",
+      "image": "/assets/images/general/service-invest.svg",
+      "shortDescription": "Professional investment guidance.",
+      "fullDescription": "Practical conversations on surplus allocation, tax-aware investing, and documentation — always within the professional scope of a chartered accountancy practice.",
+      "features": [
+        "Goal and surplus mapping",
+        "Tax-aware product notes",
+        "Review of existing holdings",
+        "Periodic check-ins"
+      ],
+      "benefits": [
+        "Decisions with tax context",
+        "Clearer paperwork",
+        "Aligned with cash-flow reality"
+      ],
+      "cta": { "label": "Book an advisory hour", "href": "/contact" }
+    }
+  ],
+  "cta": {
+    "title": "Complex work needs clarity.",
+    "description": "Book a consultation and the firm will help define the right service path for your business, return, audit, filing, or finance requirement.",
+    "primaryCta": { "label": "Book Consultation", "href": "/contact", "variant": "primary" }
+  }
+}

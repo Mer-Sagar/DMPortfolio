@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 64" fill="none">
+  <rect width="64" height="64" rx="16" fill="#1A2744"/>
+  <path d="M18 40V24h6l8 12 8-12h6v16h-5V31l-7 10h-4l-7-10v9H18Z" fill="#F3F1EC"/>
+  <circle cx="48" cy="18" r="5" fill="#C8A96B"/>
+  <text x="80" y="30" font-family="Manrope, sans-serif" font-size="16" font-weight="800" fill="#1A2744">ATELIER</text>
+  <text x="80" y="48" font-family="Manrope, sans-serif" font-size="10" letter-spacing="3" fill="#5D6573">PROFESSIONAL</text>
+</svg>

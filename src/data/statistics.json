@@ -1,0 +1,34 @@
+{
+  "eyebrow": "Live Index",
+  "title": "Practice figures, kept current.",
+  "items": [
+    {
+      "id": "clients",
+      "value": 500,
+      "suffix": "+",
+      "label": "Happy Clients",
+      "description": "Businesses and individuals supported with confidence."
+    },
+    {
+      "id": "team",
+      "value": 8,
+      "suffix": "+",
+      "label": "Team Members",
+      "description": "Qualified professionals and support team."
+    },
+    {
+      "id": "audits",
+      "value": 100,
+      "suffix": "+",
+      "label": "Tax Audits",
+      "description": "Audit assignments handled with compliance-first rigor."
+    },
+    {
+      "id": "experience",
+      "value": 8,
+      "suffix": "+",
+      "label": "Years Combined Experience",
+      "description": "Focused advisory experience across finance and taxation."
+    }
+  ]
+}

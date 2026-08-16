@@ -1,0 +1,67 @@
+{
+  "seo": {
+    "title": "Engagements | Selected work and case notes",
+    "description": "Selected advisory, compliance, and finance engagements presented as structured case notes."
+  },
+  "hero": {
+    "eyebrow": "Projects",
+    "heading": "Work that can",
+    "highlightedHeading": "be filed.",
+    "description": "Selected engagements presented as case notes — scope, method, and outcome without theatre."
+  },
+  "categories": ["All", "Tax", "GST", "Audit", "Finance", "Compliance"],
+  "items": [
+    {
+      "id": "proj-01",
+      "title": "Year-round GST close for a trading group",
+      "slug": "gst-close-trading-group",
+      "category": "GST",
+      "client": "Regional trading group",
+      "year": "2025",
+      "description": "Monthly returns, ITC hygiene, and a documented e-way bill checklist so the close stopped depending on a single person.",
+      "image": "/assets/images/projects/project-1.svg",
+      "gallery": ["/assets/images/projects/project-1.svg", "/assets/images/projects/project-2.svg"],
+      "services": ["GST Compliance", "Bookkeeping Services"],
+      "technologies": ["Working papers", "Reconciliation packs"]
+    },
+    {
+      "id": "proj-02",
+      "title": "Banker-ready project note for expansion",
+      "slug": "project-note-expansion",
+      "category": "Finance",
+      "client": "Manufacturing promoter",
+      "year": "2025",
+      "description": "Feasibility schedules, DSCR views, and assumption logs prepared for a capacity expansion conversation with lenders.",
+      "image": "/assets/images/projects/project-2.svg",
+      "gallery": ["/assets/images/projects/project-2.svg", "/assets/images/projects/project-3.svg"],
+      "services": ["Project Finance"],
+      "technologies": ["Cash-flow model", "Sensitivity notes"]
+    },
+    {
+      "id": "proj-03",
+      "title": "Statutory audit with a living working file",
+      "slug": "statutory-audit-working-file",
+      "category": "Audit",
+      "client": "Private limited company",
+      "year": "2026",
+      "description": "Partner-reviewed audit with a structured working file that the finance team could reuse for GST and tax.",
+      "image": "/assets/images/projects/project-3.svg",
+      "gallery": ["/assets/images/projects/project-3.svg"],
+      "services": ["Auditing", "Bookkeeping Services"],
+      "technologies": ["Audit programme", "Management letter"]
+    },
+    {
+      "id": "proj-04",
+      "title": "ROC calendar for a growing private company",
+      "slug": "roc-calendar-private-company",
+      "category": "Compliance",
+      "client": "Founder-led company",
+      "year": "2026",
+      "description": "Event-based forms, annual filings, and a shared calendar so additional fees stopped arriving as surprises.",
+      "image": "/assets/images/projects/project-4.svg",
+      "gallery": ["/assets/images/projects/project-4.svg"],
+      "services": ["ROC Compliance"],
+      "technologies": ["Statutory calendar", "Registers"]
+    }
+  ]
+}

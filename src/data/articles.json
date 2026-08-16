@@ -1,0 +1,59 @@
+{
+  "seo": {
+    "title": "Journal | Policy notes and compliance updates",
+    "description": "Editorial notes on GST, industrial policy, and the filing calendar for growing businesses."
+  },
+  "hero": {
+    "eyebrow": "Observatory",
+    "heading": "Filed notes,",
+    "highlightedHeading": "not noise.",
+    "description": "Policy, GST, and practice notes written so a founder can act without wading through circulars."
+  },
+  "categories": ["All", "Policy", "GST", "Practice"],
+  "items": [
+    {
+      "id": "art-01",
+      "title": "Viksit Gujarat Industrial Policy 2026: Key Highlights for MSMEs, Startups & Large Industries",
+      "slug": "viksit-gujarat-industrial-policy-2026",
+      "date": "2026-06-15",
+      "category": "Policy",
+      "author": "Practice Desk",
+      "coverImage": "/assets/images/articles/article-1.svg",
+      "excerpt": "MSME incentives, startup benefits, and what growing manufacturers should file before they claim.",
+      "content": "The 2026 industrial policy conversation is really a documentation conversation. Incentives look generous on a slide; they become real when eligibility, capex proofs, and employment registers are already in order.\n\nThis note summarises the practical checkpoints for MSMEs, startups, and larger units: what typically needs to be evidenced, which conversations belong with a banker versus a filing calendar, and how subsidy work should sit beside GST and ROC hygiene.\n\nTreat the policy as a workflow. Map the scheme, collect proofs while the project is live, and keep a single working file. Last-minute reconstructions are where claims stall.",
+      "tags": ["MSME", "Policy", "Subsidy"],
+      "readingTime": "6 min",
+      "pdfUrl": "/assets/documents/sample-note.pdf",
+      "featured": true
+    },
+    {
+      "id": "art-02",
+      "title": "E-Way Bill New Update from 01 Aug. 2026: Mandatory Ship-To GSTIN & EWB Closure Facility",
+      "slug": "e-way-bill-update-august-2026",
+      "date": "2026-08-01",
+      "category": "GST",
+      "author": "Practice Desk",
+      "coverImage": "/assets/images/articles/article-2.svg",
+      "excerpt": "Ship-To GSTIN becomes mandatory in Bill-To/Ship-To transactions, with a closure facility to confirm delivery.",
+      "content": "GSTN’s August 2026 e-way bill changes tighten Bill-To/Ship-To hygiene. Ship-To GSTIN is no longer optional theatre; it is part of generation. A closure facility then confirms that goods actually arrived.\n\nOperations teams should update ERP masters, transporter SOPs, and the person who clicks generate. Mismatched ship-to data will not be a back-office inconvenience — it will block movement.\n\nRecommended sequence: inventory of Bill-To/Ship-To patterns, master data clean-up, a dry run on a low-volume lane, then a written SOP for closure.",
+      "tags": ["GST", "E-Way Bill"],
+      "readingTime": "5 min",
+      "pdfUrl": "/assets/documents/sample-note.pdf",
+      "featured": false
+    },
+    {
+      "id": "art-03",
+      "title": "A Practical GST Compliance Calendar for Growing Businesses",
+      "slug": "gst-compliance-calendar",
+      "date": "2026-01-08",
+      "category": "Practice",
+      "author": "Practice Desk",
+      "coverImage": "/assets/images/articles/article-3.svg",
+      "excerpt": "A clear monthly GST rhythm helps businesses avoid late fees, input tax credit issues, and last-minute filing pressure.",
+      "content": "A GST calendar is not a poster of due dates. It is a sequence: books cut-off, ITC match, return draft, partner glance, file, archive.\n\nGrowing businesses lose money in two places — late fees that feel small until they compound, and credit that looked available until a mismatch arrived. Both are calendar problems.\n\nSet a monthly hour that does not move. Keep a working file. Treat the return as a close, not a portal click.",
+      "tags": ["GST", "Calendar"],
+      "readingTime": "4 min",
+      "featured": false
+    }
+  ]
+}

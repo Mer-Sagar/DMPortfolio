@@ -1,0 +1,51 @@
+{
+  "seo": {
+    "title": "Contact | Clear talk, clear work",
+    "description": "Start with one practical conversation for taxation, audit, GST, ROC compliance, bookkeeping, project finance, subsidy, and advisory work."
+  },
+  "hero": {
+    "eyebrow": "Contact",
+    "heading": "Clear Talk",
+    "highlightedHeading": "Clear Work",
+    "description": "Start with one practical conversation for taxation, audit, GST, ROC compliance, bookkeeping, project finance, subsidy, and advisory work."
+  },
+  "channelsTitle": "Choose your path",
+  "channelsDescription": "Share your requirement and the firm will guide you toward the right tax, GST, ROC, audit, finance, or advisory process.",
+  "formTitle": "Write it once",
+  "formDescription": "Select the service, add your contact details, and describe the work clearly so the team can respond with context.",
+  "mapTitle": "Find us",
+  "mapDescription": "The map embed is driven from contact JSON and can be replaced without touching components.",
+  "phones": [
+    { "label": "Phone 01", "value": "CA Raj Sojitra: 9328026969", "href": "tel:9328026969" },
+    { "label": "Phone 02", "value": "CA Viraj Vaishnav: 7874087997", "href": "tel:7874087997" }
+  ],
+  "form": {
+    "fields": [
+      { "name": "name", "label": "Name", "type": "text", "required": true, "placeholder": "Your name" },
+      { "name": "phone", "label": "Mobile Number", "type": "tel", "required": true, "placeholder": "10-digit mobile" },
+      { "name": "email", "label": "Email", "type": "email", "required": true, "placeholder": "you@company.com" },
+      { "name": "company", "label": "Company", "type": "text", "required": false, "placeholder": "Firm or company" },
+      {
+        "name": "subject",
+        "label": "Service",
+        "type": "select",
+        "required": true,
+        "placeholder": "Select a service",
+        "options": [
+          "Auditing",
+          "Income Tax",
+          "GST Compliance",
+          "Bookkeeping Services",
+          "Project Finance",
+          "Subsidy Services",
+          "ROC Compliance",
+          "Investment Advisory"
+        ]
+      },
+      { "name": "message", "label": "Custom Message", "type": "textarea", "required": true, "placeholder": "Describe the work" }
+    ],
+    "submitLabel": "Send Inquiry",
+    "successMessage": "Inquiry received. This template stores the payload locally until you connect submitContactForm to a live API.",
+    "errorMessage": "The inquiry could not be sent. Check the form and try again."
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "brand": {
+    "name": "Sojitra Vaishnav & Co.",
+    "shortName": "SV",
+    "tagline": "Chartered Accountants",
+    "description": "Income tax, audit, GST, compliance, and advisory solutions for individuals, startups, and growing businesses.",
+    "logo": "/assets/images/logo/logo.svg",
+    "mark": "/assets/images/logo/mark.svg",
+    "favicon": "/assets/images/logo/favicon.svg"
+  },
+  "theme": {
+    "primary": "#1a2744",
+    "secondary": "#ffffff",
+    "accent": "#c8a96b",
+    "background": "#f3f1ec",
+    "surface": "#fbfaf7",
+    "text": "#1a2332",
+    "muted": "#5d6573",
+    "border": "#d9d4cb"
+  },
+  "contact": {
+    "email": "casvandcompany@gmail.com",
+    "phone": "9328026969",
+    "whatsapp": "9328026969",
+    "address": "202, Wing-B, 9 Square, NR Marwadi Near Nana Mava Circle, 150 Feet Ring Road, Rajkot-360005",
+    "city": "Rajkot",
+    "country": "India",
+    "mapUrl": "https://maps.google.com/?q=9+Square+Nana+Mava+Circle+Rajkot",
+    "mapEmbedUrl": "https://maps.google.com/maps?q=9%20Square%20Nana%20Mava%20Circle%20Rajkot&t=&z=15&ie=UTF8&iwloc=&output=embed"
+  },
+  "social": {
+    "instagram": "https://www.instagram.com/",
+    "linkedin": "",
+    "facebook": "",
+    "twitter": "",
+    "maps": "https://maps.google.com/?q=9+Square+Nana+Mava+Circle+Rajkot"
+  },
+  "workingHours": [
+    {
+      "label": "Hours",
+      "value": "Monday to Saturday, 10:00 AM - 7:00 PM"
+    }
+  ],
+  "copyright": "© {year} Sojitra Vaishnav & Co. All Rights Reserved.",
+  "legal": [
+    { "label": "Privacy", "href": "/contact" },
+    { "label": "Terms", "href": "/contact" }
+  ],
+  "locale": "en-IN",
+  "baseUrl": "https://www.example.com"
+}

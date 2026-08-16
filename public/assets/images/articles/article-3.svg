@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750">
+  <rect width="1200" height="750" fill="#31405C"/>
+  <text x="80" y="160" font-family="Georgia, serif" font-size="52" fill="#F3F1EC">Calendar</text>
+  <rect x="80" y="220" width="280" height="8" fill="#C8A96B"/>
+</svg>

@@ -1,0 +1,58 @@
+{
+  "foundersTitle": "Trust-heavy decisions",
+  "foundersDescription": "Partner profiles shaped for serious financial decisions, client clarity, and accountable execution.",
+  "supportTitle": "Daily rhythm",
+  "supportDescription": "Article assistants support accounting, documentation, filing workflows, and client coordination.",
+  "members": [
+    {
+      "id": "raj",
+      "name": "CA Raj Sojitra",
+      "designation": "Partner",
+      "photo": "/assets/images/team/person-1.svg",
+      "initials": "RS",
+      "shortBio": "ROC, GST litigation, project finance, tax planning, and audit.",
+      "fullBio": "Specializes in ROC compliance, GST litigation, project finance, tax planning, and audit. Demonstrates a strong track record in ensuring regulatory compliance, managing complex financial projects, and providing strategic tax solutions to optimize business performance and minimize risks.",
+      "experience": "4 Years Experience",
+      "credentials": "ACA, B.Com.",
+      "specialties": ["ROC compliance", "GST litigation", "Project finance", "Tax planning", "Audit", "Investment Planning"],
+      "social": { "linkedin": "" },
+      "featured": true
+    },
+    {
+      "id": "viraj",
+      "name": "CA Viraj Vaishnav",
+      "designation": "Partner",
+      "photo": "/assets/images/team/person-2.svg",
+      "initials": "VV",
+      "shortBio": "GST filing, income tax returns, investment advisory, and internal audit.",
+      "fullBio": "Specializes in GST filing, income tax return preparation, investment advisory, and internal audit. Proven expertise in ensuring regulatory compliance, optimizing financial strategies, and providing comprehensive tax and audit solutions to enhance business performance.",
+      "experience": "4 Years Experience",
+      "credentials": "ACA, B.Com.",
+      "specialties": ["GST filing", "Income tax return preparation", "Investment adviser", "Internal audit"],
+      "social": { "linkedin": "" },
+      "featured": true
+    },
+    {
+      "id": "shubham",
+      "name": "Shubham Kamani",
+      "designation": "Article Assistant",
+      "photo": "/assets/images/team/person-3.svg",
+      "initials": "SK",
+      "shortBio": "Supports accounting, filing, documentation, and client coordination.",
+      "fullBio": "Supports accounting, filing, documentation, and client coordination across GST and tax calendars.",
+      "specialties": ["Accounting", "Filing", "Documentation"],
+      "featured": false
+    },
+    {
+      "id": "arman",
+      "name": "Arman Bhakkhar",
+      "designation": "Article Assistant",
+      "photo": "/assets/images/team/person-4.svg",
+      "initials": "AB",
+      "shortBio": "Assists with compliance workflows, records, and client support.",
+      "fullBio": "Assists with compliance workflows, records, and client support so partners can stay close to judgment calls.",
+      "specialties": ["Compliance", "Records", "Client support"],
+      "featured": false
+    }
+  ]
+}
