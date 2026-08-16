@@ -10,6 +10,7 @@ import { CTASection } from "@/components/sections/CTASection";
 import { DocumentRoute } from "@/components/sections/DocumentRoute";
 import { EthosSection } from "@/components/sections/EthosSection";
 import { FilingCalendar } from "@/components/sections/FilingCalendar";
+import { HeadquartersMap } from "@/components/sections/HeadquartersMap";
 import { HomeHero } from "@/components/sections/HomeHero";
 import { MindsPolaroids } from "@/components/sections/MindsPolaroids";
 import { ProcessStages } from "@/components/sections/ProcessStages";
@@ -109,35 +110,30 @@ export function HomePage() {
       {isEnabled(home.sections, "articles") && hasItems(featuredArticles) ? (
         <section className="bg-white pb-16 sm:pb-24">
           <Container>
-            <SectionHeader eyebrow={home.articlesEyebrow} title={home.articlesTitle ?? "Journal"} />
+            <h2 className="poster text-center">{home.articlesTitle ?? home.articlesEyebrow}</h2>
+            <div className="mt-4 flex flex-col items-center gap-1" aria-hidden>
+              <span className="h-1.5 w-1.5 rotate-45 bg-sky-500" />
+              <span className="h-1.5 w-1.5 rotate-45 bg-sky-500" />
+            </div>
             <div className="mt-10">
-              <ArticleGrid items={featuredArticles} />
+              <ArticleGrid
+                items={featuredArticles}
+                variant="journal"
+                labels={{
+                  title: home.articlesTitle,
+                  readLabel: home.articlesReadLabel,
+                  readShortLabel: home.articlesReadShortLabel,
+                  pdfLabel: home.articlesPdfLabel,
+                  pdfShortLabel: home.articlesPdfShortLabel,
+                }}
+              />
             </div>
           </Container>
         </section>
       ) : null}
 
       {isEnabled(home.sections, "contact") ? (
-        <section className="border-t border-line bg-white py-16">
-          <Container className="grid gap-8 md:grid-cols-2">
-            <div>
-              <p className="eyebrow">{home.contactEyebrow}</p>
-              <h2 className="mt-4 font-serif text-5xl">{site.contact.city}</h2>
-            </div>
-            <div className="grid gap-6 sm:grid-cols-2">
-              <div>
-                <p className="eyebrow">Address</p>
-                <p className="mt-3 text-muted">{site.contact.address}</p>
-              </div>
-              {site.workingHours[0] ? (
-                <div>
-                  <p className="eyebrow">{site.workingHours[0].label}</p>
-                  <p className="mt-3 text-muted">{site.workingHours[0].value}</p>
-                </div>
-              ) : null}
-            </div>
-          </Container>
-        </section>
+        <HeadquartersMap eyebrow={home.contactEyebrow} watermark={home.contactTitle} />
       ) : null}
 
       {isEnabled(home.sections, "testimonials") && hasItems(testimonials.items) ? (
@@ -153,7 +149,7 @@ export function HomePage() {
         </section>
       ) : null}
 
-      {isEnabled(home.sections, "finalCta") ? <CTASection data={home.finalCta} dark /> : null}
+      {isEnabled(home.sections, "finalCta") ? <CTASection data={home.finalCta} variant="clarity" /> : null}
     </>
   );
 }

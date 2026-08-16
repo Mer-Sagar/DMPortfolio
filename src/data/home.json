@@ -173,10 +173,16 @@
     ]
   },
   "articlesEyebrow": "Journal",
+  "articlesTitle": "Journal",
+  "articlesReadLabel": "Read Manuscript",
+  "articlesReadShortLabel": "Read",
+  "articlesPdfLabel": "Download PDF",
+  "articlesPdfShortLabel": "PDF",
   "contactEyebrow": "Headquarters",
+  "contactTitle": "Contact",
   "finalCta": {
     "title": "Ready to bring clarity to your finance and compliance work?",
-    "description": "Speak with Dhaval Mer & Associates for taxation, audit, GST, ROC, project finance, and business advisory support.",
+    "description": "Speak with Dhaval Mer & Associates for taxation, audit, GST, ROC, project finance, and business advisory support in Rajkot.",
     "primaryCta": { "label": "Book Consultation", "href": "/contact", "variant": "primary" }
   },
   "sections": [

@@ -1,4 +1,4 @@
-import { Check } from "lucide-react";
+import { ArrowUpRight, Check, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/common/Button";
 import { Container } from "@/components/common/Container";
@@ -8,7 +8,7 @@ import type { HomeCta } from "@/types";
 interface CTASectionProps {
   data?: HomeCta;
   dark?: boolean;
-  variant?: "default" | "banner";
+  variant?: "default" | "banner" | "clarity";
 }
 
 export function CTASection({ data, dark, variant = "default" }: CTASectionProps) {
@@ -53,6 +53,31 @@ export function CTASection({ data, dark, variant = "default" }: CTASectionProps)
             </div>
           </div>
           <GoldWave className="mt-10" />
+        </Container>
+      </section>
+    );
+  }
+
+  if (variant === "clarity") {
+    return (
+      <section className="bg-white py-20 sm:py-28">
+        <Container className="text-center">
+          <div className="mx-auto mb-8 grid h-11 w-11 place-items-center rounded-full border border-slate-300">
+            <Sparkles className="h-4 w-4 text-slate-800" strokeWidth={1.5} aria-hidden />
+          </div>
+          <h2 className="poster mx-auto max-w-4xl">{data.title}</h2>
+          {data.description ? (
+            <p className="serif-kicker mx-auto mt-6 max-w-2xl">{data.description}</p>
+          ) : null}
+          {data.primaryCta ? (
+            <Link
+              to={data.primaryCta.href}
+              className="mt-10 inline-flex items-center gap-2 bg-slate-950 px-8 py-4 text-[13px] font-bold uppercase tracking-[0.16em] text-white shadow-[5px_5px_0_0_#1e3a8a]"
+            >
+              {data.primaryCta.label}
+              <ArrowUpRight className="h-4 w-4" />
+            </Link>
+          ) : null}
         </Container>
       </section>
     );

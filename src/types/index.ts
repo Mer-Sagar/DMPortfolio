@@ -240,6 +240,10 @@ export interface HomeData {
   process?: ProcessData;
   articlesEyebrow?: string;
   articlesTitle?: string;
+  articlesReadLabel?: string;
+  articlesReadShortLabel?: string;
+  articlesPdfLabel?: string;
+  articlesPdfShortLabel?: string;
   contactEyebrow?: string;
   contactTitle?: string;
   finalCta?: HomeCta;
