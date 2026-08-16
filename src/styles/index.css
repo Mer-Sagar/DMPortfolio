@@ -185,10 +185,6 @@ video {
 }
 
 @media (min-width: 1024px) {
-  :root {
-    --header-offset: 6.5rem;
-  }
-}
   .media-frame {
     border-radius: 1.75rem;
   }
