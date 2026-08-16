@@ -29,7 +29,40 @@ npm run preview
 
 This is a Vite SPA. Vercel should use **Build Command** `npm run build` and **Output Directory** `dist`. Client routes (`/services`, `/about`, etc.) are handled by `vercel.json`.
 
-### Commands
+### Commands (Windows CMD)
+
+From the project folder (`d:\Learn`):
+
+```cmd
+cd /d d:\Learn
+npm install
+npm run build
+npx vercel login
+npx vercel link
+npx vercel --prod
+```
+
+When `npx vercel link` asks which project to use, choose the existing Vercel project **cadhavalmerassociates** so production stays at https://cadhavalmerassociates.vercel.app/
+
+Later deploys from this folder:
+
+```cmd
+cd /d d:\Learn
+npm run vercel:prod
+```
+
+GitHub + Vercel together:
+
+```cmd
+cd /d d:\Learn
+git add .
+git commit -m "Deploy Dhaval Mer site to Vercel"
+git push origin main
+```
+
+If Vercel is connected to `Mer-Sagar/DMPortfolio` with Production Branch `main`, that push is enough. A `git push` does **not** update the live URL until the Vercel project is linked to this GitHub repo.
+
+### Commands (bash / Git Bash)
 
 ```bash
 npm install
@@ -45,11 +78,9 @@ npm run vercel
 npm run vercel:prod
 ```
 
-First time, log in when prompted, then pick the existing project **cadhavalmerassociates** so production stays at https://cadhavalmerassociates.vercel.app/
-
 ### GitHub auto-deploy
 
-In the Vercel dashboard, connect this GitHub repo and set Production Branch to `main`. After that, every `git push origin main` publishes a new production build.
+In the [Vercel dashboard](https://vercel.com/dashboard): **Add New… → Project → Import** `Mer-Sagar/DMPortfolio` (or open the existing **cadhavalmerassociates** project → Settings → Git → connect that repo). Set Production Branch to `main`. Framework: Vite. Build Command: `npm run build`. Output Directory: `dist`. Then Redeploy.
 
 ## To customize this website, edit these JSON files
 
