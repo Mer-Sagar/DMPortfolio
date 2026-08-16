@@ -21,25 +21,32 @@ export function MobileMenu({ open, items, id }: MobileMenuProps) {
           role="dialog"
           aria-modal="true"
           aria-label="Menu"
-          className="pointer-events-auto fixed inset-0 z-40 bg-background/95 px-6 pt-24 backdrop-blur-md lg:hidden"
-          initial={reduce ? false : { opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
+          className="pointer-events-auto fixed inset-0 z-40 bg-[#f7f5f0]/97 px-6 pt-28 backdrop-blur-md"
+          initial={reduce ? false : { opacity: 0, y: -12 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -8 }}
+          transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
         >
-          <nav className="mx-auto flex max-w-lg flex-col gap-2">
-            {items.map((item) => (
-              <NavLink
+          <nav className="mx-auto flex max-w-lg flex-col gap-1">
+            {items.map((item, index) => (
+              <motion.div
                 key={item.id}
-                to={item.href}
-                className={({ isActive }) =>
-                  `rounded-2xl px-2 py-3 font-serif text-4xl ${isActive ? "text-primary" : "text-ink"}`
-                }
+                initial={reduce ? false : { opacity: 0, x: -10 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.04 * index }}
               >
-                {item.label}
-              </NavLink>
+                <NavLink
+                  to={item.href}
+                  className={({ isActive }) =>
+                    `block rounded-2xl px-2 py-3 font-serif text-4xl sm:text-5xl ${isActive ? "text-primary" : "text-ink"}`
+                  }
+                >
+                  {item.label}
+                </NavLink>
+              </motion.div>
             ))}
             {navigation.cta ? (
-              <div className="pt-6">
+              <div className="pt-8">
                 <Button href={navigation.cta.href} label={navigation.cta.label} />
               </div>
             ) : null}

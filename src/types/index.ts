@@ -110,6 +110,7 @@ export interface HeroData {
   image?: string;
   imageAlt?: string;
   video?: string;
+  marquee?: string;
   background?: string;
   badge?: string;
   note?: string;

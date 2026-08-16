@@ -10,13 +10,13 @@ export function TeamCard({ member }: TeamCardProps) {
   const links = socialEntries(member.social);
 
   return (
-    <article className="group overflow-hidden border border-line bg-surface">
-      <div className="aspect-[4/5] overflow-hidden bg-[#e7efe8]">
+    <article className="group overflow-hidden rounded-[1.4rem] bg-[#e8efe9]">
+      <div className="aspect-[4/5] overflow-hidden">
         {member.photo ? (
           <ImageWithFallback
             src={member.photo}
             alt={member.name}
-            className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.04]"
+            className="h-full w-full object-cover object-[center_20%] transition duration-700 group-hover:scale-[1.04]"
           />
         ) : (
           <div className="flex h-full items-end p-6">
@@ -52,7 +52,7 @@ export function TeamGrid({ members }: TeamGridProps) {
   if (!members.length) return null;
 
   return (
-    <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+    <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-[repeat(auto-fit,minmax(240px,1fr))]">
       {members.map((member) => (
         <TeamCard key={member.id} member={member} />
       ))}

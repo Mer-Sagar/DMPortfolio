@@ -14,10 +14,13 @@
     "secondaryCta": { "label": "Explore Services", "href": "/services", "variant": "secondary" },
     "image": "/assets/images/hero/office.svg",
     "imageAlt": "Calm professional workspace with structured light",
+    "video": "/assets/videos/office.mp4",
+    "background": "/assets/videos/taxes.mp4",
     "badge": "Live",
     "note": "Every figure on this page is fed from practice records — not placeholder copy.",
     "exhibitLabel": "Exhibit A · Engagement Reel",
     "exhibitMeta": "FY 2026–27",
+    "marquee": "ADVISORY VERIFIED  •  AUDIT READY  •  GST ON FILE  •  PARTNER LED  •  ",
     "metrics": [
       { "label": "Clients", "value": "500+", "description": "Active relationships" },
       { "label": "Tax Audits", "value": "100+", "description": "Audit-ready process" },

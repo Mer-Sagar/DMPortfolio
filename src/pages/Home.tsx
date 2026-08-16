@@ -50,12 +50,13 @@ export function HomePage() {
         <section className="py-16 sm:py-24">
           <Container>
             <SectionHeader title={home.highlights.title} description={home.highlights.description} />
-            <div className="mt-10 grid gap-6 md:grid-cols-3">
-              {home.highlights.items.map((item) => (
-                <Reveal key={item.id}>
-                  <article className="border-t border-line pt-6">
+            <div className="timeline mt-10 space-y-10 md:grid md:grid-cols-3 md:gap-8 md:space-y-0">
+              {home.highlights.items.map((item, index) => (
+                <Reveal key={item.id} delay={index * 0.08}>
+                  <article className="relative pl-8 md:pl-0">
+                    <span className="absolute left-0 top-1.5 h-2.5 w-2.5 rounded-full bg-primary md:static md:mb-5 md:block" />
                     {item.eyebrow ? <p className="eyebrow">{item.eyebrow}</p> : null}
-                    <h3 className="mt-4 font-serif text-3xl">{item.title}</h3>
+                    <h3 className="mt-3 font-sans text-2xl font-extrabold tracking-tight">{item.title}</h3>
                     <p className="mt-3 text-muted">{item.description}</p>
                   </article>
                 </Reveal>
@@ -84,6 +85,14 @@ export function HomePage() {
       ) : null}
 
       {isEnabled(home.sections, "midCta") ? <CTASection data={home.midCta} /> : null}
+
+      {home.hero.background ? (
+        <Container className="pb-16">
+          <div className="media-frame relative aspect-[16/8]">
+            <video className="absolute inset-0 h-full w-full object-cover" src={home.hero.background} autoPlay muted loop playsInline />
+          </div>
+        </Container>
+      ) : null}
 
       {isEnabled(home.sections, "statistics") && hasItems(statistics.items) ? (
         <StatisticGrid items={statistics.items} eyebrow={statistics.eyebrow} />
@@ -222,7 +231,7 @@ export function HomePage() {
         </section>
       ) : null}
 
-      {isEnabled(home.sections, "finalCta") ? <CTASection data={home.finalCta} /> : null}
+      {isEnabled(home.sections, "finalCta") ? <CTASection data={home.finalCta} dark /> : null}
     </>
   );
 }

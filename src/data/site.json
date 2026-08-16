@@ -4,19 +4,19 @@
     "shortName": "SV",
     "tagline": "Chartered Accountants",
     "description": "Income tax, audit, GST, compliance, and advisory solutions for individuals, startups, and growing businesses.",
-    "logo": "/assets/images/logo/logo.svg",
-    "mark": "/assets/images/logo/mark.svg",
-    "favicon": "/assets/images/logo/favicon.svg"
+    "logo": "/assets/images/logo/ca-india.png",
+    "mark": "/assets/images/logo/ca-india.png",
+    "favicon": "/assets/images/logo/ca-india.png"
   },
   "theme": {
-    "primary": "#1a2744",
+    "primary": "#0f172a",
     "secondary": "#ffffff",
-    "accent": "#c8a96b",
-    "background": "#f3f1ec",
-    "surface": "#fbfaf7",
-    "text": "#1a2332",
-    "muted": "#5d6573",
-    "border": "#d9d4cb"
+    "accent": "#d6b76a",
+    "background": "#f7f5f0",
+    "surface": "#fffaf0",
+    "text": "#0f172a",
+    "muted": "#667085",
+    "border": "#e4dfd6"
   },
   "contact": {
     "email": "casvandcompany@gmail.com",
