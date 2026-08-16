@@ -13,67 +13,64 @@ export function HomeHero({ hero }: HomeHeroProps) {
   const ticker = hero.marquee ?? "ADVISORY VERIFIED  •  AUDIT READY  •  ";
 
   return (
-    <section className="pt-24 sm:pt-28">
+    <section className="pt-[var(--header-offset)]">
       <Container>
-        <div className="flex flex-wrap items-center justify-between gap-3 border-b border-line pb-3">
-          <p className="eyebrow flex items-center gap-2">
-            <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-primary text-[0.6rem] font-bold text-secondary">
+        <div className="flex items-center justify-between gap-3 border-b border-line pb-3">
+          <p className="eyebrow flex min-w-0 items-center gap-2">
+            <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary text-[0.6rem] font-bold text-secondary">
               {site.brand.shortName}
             </span>
-            {hero.kickerLeft}
+            <span className="truncate">{hero.kickerLeft}</span>
           </p>
-          {hero.kickerRight ? <p className="eyebrow">{hero.kickerRight}</p> : null}
+          {hero.kickerRight ? <p className="eyebrow hidden shrink-0 sm:block">{hero.kickerRight}</p> : null}
         </div>
         <Reveal>
-          <h1 className="display mt-10 max-w-5xl">
+          <h1 className="display mt-8 max-w-5xl sm:mt-10">
             {hero.heading}{" "}
             {hero.highlightedHeading ? <span className="double-underline">{hero.highlightedHeading}</span> : null}
           </h1>
         </Reveal>
         {hero.description ? (
           <Reveal delay={0.08}>
-            <p className="mt-6 max-w-xl text-lg text-muted">{hero.description}</p>
+            <p className="mt-5 max-w-xl text-[0.98rem] text-muted sm:mt-6 sm:text-lg">{hero.description}</p>
           </Reveal>
         ) : null}
         <Reveal delay={0.14}>
-          <div className="mt-8 flex flex-wrap gap-3">
-            {hero.primaryCta ? <Button href={hero.primaryCta.href} label={hero.primaryCta.label} /> : null}
+          <div className="mt-6 flex w-full flex-col gap-3 sm:mt-8 sm:w-auto sm:flex-row sm:flex-wrap">
+            {hero.primaryCta ? <Button href={hero.primaryCta.href} label={hero.primaryCta.label} className="w-full sm:w-auto" /> : null}
             {hero.secondaryCta ? (
-              <Button href={hero.secondaryCta.href} label={hero.secondaryCta.label} variant="secondary" />
+              <Button
+                href={hero.secondaryCta.href}
+                label={hero.secondaryCta.label}
+                variant="secondary"
+                className="w-full sm:w-auto"
+              />
             ) : null}
           </div>
         </Reveal>
-        {hero.note ? <p className="mt-6 max-w-xl text-sm text-muted">{hero.note}</p> : null}
+        {hero.note ? <p className="mt-5 max-w-xl text-sm text-muted sm:mt-6">{hero.note}</p> : null}
       </Container>
 
       {(hero.video || hero.image) && (
-        <Container className="mt-10 sm:mt-14">
-          <div className="flex items-center justify-between pb-3">
-            {hero.exhibitLabel ? <p className="eyebrow">{hero.exhibitLabel}</p> : null}
-            {hero.exhibitMeta ? <p className="eyebrow">{hero.exhibitMeta}</p> : null}
+        <Container className="mt-8 sm:mt-14">
+          <div className="flex items-center justify-between gap-3 pb-3">
+            {hero.exhibitLabel ? <p className="eyebrow min-w-0 truncate">{hero.exhibitLabel}</p> : null}
+            {hero.exhibitMeta ? <p className="eyebrow hidden shrink-0 sm:block">{hero.exhibitMeta}</p> : null}
           </div>
-          <div className="media-frame relative aspect-[16/9] sm:aspect-[16/7.2]">
+          <div className="media-frame aspect-[16/10] sm:aspect-[16/8] lg:aspect-[16/7.2]">
             {hero.video ? (
-              <video
-                className="absolute inset-0 h-full w-full object-cover"
-                src={hero.video}
-                autoPlay
-                muted
-                loop
-                playsInline
-                poster={hero.image}
-              />
+              <video src={hero.video} autoPlay muted loop playsInline poster={hero.image} />
             ) : (
-              <ImageWithFallback src={hero.image} alt={hero.imageAlt ?? ""} className="absolute inset-0 h-full w-full object-cover" />
+              <ImageWithFallback src={hero.image} alt={hero.imageAlt ?? ""} />
             )}
-            <div className="absolute inset-x-0 bottom-0 gold-bar py-2 text-[0.65rem] font-semibold tracking-[0.22em] text-white">
+            <div className="absolute inset-x-0 bottom-0 z-[2] overflow-hidden gold-bar py-2 text-[0.58rem] font-semibold tracking-[0.18em] text-white sm:text-[0.65rem] sm:tracking-[0.22em]">
               <div className="marquee-track">
                 <span className="px-6">{ticker.repeat(6)}</span>
                 <span className="px-6">{ticker.repeat(6)}</span>
               </div>
             </div>
             {hero.badge ? (
-              <span className="absolute right-4 top-4 inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.16em]">
+              <span className="absolute right-3 top-3 z-[2] inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 text-[0.6rem] font-semibold uppercase tracking-[0.16em] sm:right-4 sm:top-4">
                 <span className="h-2 w-2 animate-pulse rounded-full bg-[#c45c3e]" />
                 {hero.badge}
               </span>
@@ -83,12 +80,12 @@ export function HomeHero({ hero }: HomeHeroProps) {
       )}
 
       {hero.metrics?.length ? (
-        <Container className="mt-6">
-          <div className="grid overflow-hidden rounded-[1.6rem] border border-line bg-surface/80 sm:grid-cols-2 lg:grid-cols-4">
+        <Container className="mt-5 sm:mt-6">
+          <div className="grid overflow-hidden rounded-[1.1rem] border border-line bg-surface/80 sm:grid-cols-2 sm:rounded-[1.6rem] lg:grid-cols-4">
             {hero.metrics.map((metric) => (
-              <article key={metric.label} className="border-b border-line p-5 last:border-b-0 sm:border-r lg:border-b-0">
+              <article key={metric.label} className="border-b border-line p-4 last:border-b-0 sm:border-r sm:p-5 lg:border-b-0">
                 <p className="text-xs uppercase tracking-[0.16em] text-muted">{metric.label}</p>
-                <p className="mt-3 font-serif text-2xl sm:text-3xl">{metric.value}</p>
+                <p className="mt-3 font-serif text-xl sm:text-3xl">{metric.value}</p>
                 {metric.description ? <p className="mt-2 text-sm text-muted">{metric.description}</p> : null}
               </article>
             ))}

@@ -8,7 +8,7 @@ export function NotFoundPage() {
   return (
     <>
       <SEO meta={{ title: "Not found", description: copy.description }} />
-      <Container className="py-24">
+      <Container className="pt-[var(--header-offset)] pb-24">
         <p className="eyebrow">{copy.eyebrow}</p>
         <h1 className="display mt-4">{copy.title}</h1>
         <p className="mt-5 max-w-xl text-muted">{copy.description}</p>

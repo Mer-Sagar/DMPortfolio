@@ -25,7 +25,7 @@ export function ServiceDetailPage() {
           ogImage: service.image,
         }}
       />
-      <Container className="py-12 sm:py-16">
+      <Container className="pt-[var(--header-offset)] pb-12 sm:pb-16">
         <p className="eyebrow">
           {service.category} · {service.number}
         </p>

@@ -20,7 +20,7 @@ export function ProjectDetailPage() {
           ogImage: project.image,
         }}
       />
-      <Container className="py-12 sm:py-16">
+      <Container className="pt-[var(--header-offset)] pb-12 sm:pb-16">
         <p className="eyebrow">
           {project.category}
           {project.year ? ` · ${project.year}` : ""}

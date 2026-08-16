@@ -22,7 +22,7 @@ export function ArticleDetailPage() {
           ogImage: article.coverImage,
         }}
       />
-      <Container className="py-12 sm:py-16">
+      <Container className="pt-[var(--header-offset)] pb-12 sm:pb-16">
         <p className="eyebrow">
           {formatDate(article.date, site.locale)} · {article.category}
           {article.readingTime ? ` · ${article.readingTime}` : ""}

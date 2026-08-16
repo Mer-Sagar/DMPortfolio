@@ -88,8 +88,8 @@ export function HomePage() {
 
       {home.hero.background ? (
         <Container className="pb-16">
-          <div className="media-frame relative aspect-[16/8]">
-            <video className="absolute inset-0 h-full w-full object-cover" src={home.hero.background} autoPlay muted loop playsInline />
+          <div className="media-frame aspect-[16/10] sm:aspect-[16/8]">
+            <video src={home.hero.background} autoPlay muted loop playsInline />
           </div>
         </Container>
       ) : null}

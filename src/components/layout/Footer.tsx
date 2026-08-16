@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { BrandMark } from "@/components/common/BrandMark";
 import { Button } from "@/components/common/Button";
 import { Container } from "@/components/common/Container";
 import { navigation, services, site } from "@/lib/content";
@@ -17,7 +18,7 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3">
-              <img src={site.brand.mark} alt="" className="h-12 w-12" />
+              <BrandMark />
               <div>
                 <p className="font-extrabold leading-tight">{site.brand.name}</p>
                 <p className="text-xs uppercase tracking-[0.16em] text-muted">{site.brand.tagline}</p>
