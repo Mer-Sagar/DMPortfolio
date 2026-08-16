@@ -119,6 +119,7 @@ export interface HeroData {
   exhibitLabel?: string;
   exhibitMeta?: string;
   exhibitNote?: string;
+  metricsLabel?: string;
 }
 
 export interface Statistic {
@@ -199,6 +200,7 @@ export interface PipelineItem {
   letter: string;
   title: string;
   description: string;
+  icon?: string;
 }
 
 export interface PipelineData {
@@ -214,6 +216,7 @@ export interface SectionConfig {
 }
 
 export interface HomeCta {
+  eyebrow?: string;
   title: string;
   description?: string;
   tags?: string[];
@@ -252,6 +255,7 @@ export interface Service {
   shortDescription: string;
   fullDescription?: string;
   icon?: string;
+  featuredOnHome?: boolean;
   image?: string;
   features?: string[];
   benefits?: string[];

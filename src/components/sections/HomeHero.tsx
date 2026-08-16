@@ -122,23 +122,20 @@ export function HomeHero({ hero }: HomeHeroProps) {
       </div>
 
       {hero.metrics?.length ? (
-        <div className="relative z-10 border-y border-slate-200 bg-slate-50">
-          <div className="mx-auto max-w-7xl px-4 py-4 min-[390px]:px-6">
-            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">Ledger · live admin figures</span>
-          </div>
-          <div className="mx-auto grid max-w-7xl grid-cols-1 border-t border-slate-200 min-[480px]:grid-cols-2 lg:grid-cols-4">
-            {hero.metrics.map((metric, index) => (
-              <article
-                key={metric.label}
-                className={`group border-slate-200 px-6 py-8 sm:px-8 sm:py-10 ${
-                  index % 2 === 0 ? "min-[480px]:border-r" : ""
-                } ${index < hero.metrics!.length - 2 ? "border-b lg:border-b-0" : ""} ${
-                  index === 1 ? "lg:border-r" : ""
-                } ${index === 2 ? "lg:border-r" : ""}`}
-              >
-                <p className="text-[11px] font-bold uppercase tracking-widest text-slate-400">{metric.label}</p>
-                <p className="mt-4 font-serif text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">{metric.value}</p>
-                {metric.description ? <p className="mt-3 text-sm font-medium text-slate-500">{metric.description}</p> : null}
+        <div className="relative z-10 border-y border-slate-200 bg-white">
+          {hero.metricsLabel ? (
+            <p className="py-3 text-center text-[10px] font-semibold uppercase tracking-[0.28em] text-slate-400">
+              {hero.metricsLabel}
+            </p>
+          ) : null}
+          <div className="mx-auto grid max-w-7xl grid-cols-1 divide-y divide-slate-200 border-t border-slate-200 md:grid-cols-4 md:divide-x md:divide-y-0">
+            {hero.metrics.map((metric) => (
+              <article key={metric.label} className="px-6 py-8 sm:px-8 sm:py-10">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-400">{metric.label}</p>
+                <p className="mt-4 font-sans text-[1.55rem] font-extrabold leading-tight tracking-tight text-slate-900 sm:text-[1.75rem]">
+                  {metric.value}
+                </p>
+                {metric.description ? <p className="mt-3 text-sm text-slate-500">{metric.description}</p> : null}
               </article>
             ))}
           </div>

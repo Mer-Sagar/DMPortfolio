@@ -107,6 +107,35 @@ video {
   overflow-wrap: anywhere;
 }
 
+.poster {
+  font-family: var(--font-sans);
+  font-weight: 800;
+  letter-spacing: -0.045em;
+  line-height: 0.9;
+  text-transform: uppercase;
+  color: #0f172a;
+  font-size: clamp(2.35rem, 1.1rem + 5.2vw, 4.85rem);
+}
+
+.serif-kicker {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+  color: #6b7280;
+  font-size: clamp(0.95rem, 0.82rem + 0.45vw, 1.2rem);
+  line-height: 1.55;
+}
+
+.observe-num {
+  font-family: var(--font-sans);
+  font-weight: 800;
+  font-size: clamp(5.5rem, 4rem + 8vw, 9rem);
+  line-height: 0.75;
+  letter-spacing: -0.06em;
+  color: transparent;
+  -webkit-text-stroke: 1.5px #d7d2c8;
+}
+
 .eyebrow {
   font-size: clamp(0.58rem, 0.52rem + 0.2vw, 0.7rem);
   letter-spacing: 0.16em;

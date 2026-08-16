@@ -19,6 +19,7 @@
     "badge": "Live",
     "seal": "AUDIT READY",
     "note": "Every figure on this page is fed from practice records — not placeholder copy.",
+    "metricsLabel": "Ledger · Live admin figures",
     "exhibitLabel": "Exhibit A · Engagement Reel",
     "exhibitMeta": "FY 2026–27",
     "exhibitNote": "Filed with client consent, updated quarterly",
@@ -62,24 +63,28 @@
       {
         "id": "collect",
         "letter": "A",
+        "icon": "file-text",
         "title": "Collect",
         "description": "Books, invoices, and returns are structured into one pristine working file."
       },
       {
         "id": "review",
         "letter": "B",
+        "icon": "file-text",
         "title": "Review",
         "description": "Numbers are verified strictly against tax, GST, audit and ROC compliance."
       },
       {
         "id": "close",
         "letter": "C",
+        "icon": "file-text",
         "title": "Close",
         "description": "Filing and reporting is delivered with absolute, partner-led clarity."
       }
     ]
   },
   "midCta": {
+    "eyebrow": "Ready to sign off",
     "title": "Structure your financial future.",
     "description": "Step into clarity with our structured process — trusted by growing businesses and established enterprises.",
     "tags": ["GST / Tax / ROC", "Audit-ready records", "Project finance"],
